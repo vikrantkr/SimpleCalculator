@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Caluculator </title>
+  Vikrant
+</head>
+<body>
+Enter Number1 :<input type="number" id="num1" required autofocus>
+Enter Number1 :<input type="number" id="num2" required>
+  <input type="button" value="Add" onclick ="add();">
+  <input type="button" value="Substract" onclick ="sub();">
+  <input type="button" value="Multiplication" onclick ="mul();">
+  <input type="button" value="Division" onclick ="div();">
+  <div id="result">
+  </div>
+  <script>
+    function add()
+    {
+    var n1=document.getElementById("num1").value;
+    var n2=document.getElementById("num2").value;
+    var sum=+n1 + +n2;
+    alert("sum is "+sum);
+    document.getElementById("result").innerText=sum;
+    }
+    function sub()
+    {
+    var n1=document.getElementById("num1").value;
+    var n2=document.getElementById("num2").value;
+    var mul=+n1 - +n2;
+    alert("sum is "+mul);
+    document.getElementById("result").innerText=sum;
+    }
+    function mul()
+    {
+    var n1=document.getElementById("num1").value;
+    var n2=document.getElementById("num2").value;
+    var mul=+n1 * +n2;
+    alert("sum is "+mul);
+    document.getElementById("result").innerText=sum;
+    }
+    function div()
+    {
+    var n1=document.getElementById("num1").value;
+    var n2=document.getElementById("num2").value;
+    var div=+n1 / +n2;
+    alert("sum is "+div);
+    document.getElementById("result").innerText=sum;
+    }
+  </script>
+</body>
+</html>
